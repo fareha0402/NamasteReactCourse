@@ -1,0 +1,39 @@
+1.make your notes
+2.maintain git hub repo
+3.code the concepts
+4.use laptops and watch
+*****
+Episode 1: Inception
+1.Using plain HTML,CSS,JS
+2.index,html file
+3.Emmet plugin to generate basic skeleton
+4.Use Chrome and VS code-- developer console
+5.now we will use Js to build same helloworld
+6.now we will use react to build same 
+7.browser have js engine im it
+8. browsers doesn't understand react
+9.Get react into project
+10.CDN is a way to get react -- one way( what is CDN and why do we use it)
+11.React is JS piece of code (files)- library                            
+12.Code is written by facebook developers
+13.2 CDN links -- one is for react core ( Create element)
+-- other is react dom -- used in mobile and web sites( create root), render
+14.Use react to print Hello world
+15.Use of {}, attributes and create index.css
+16.how to create nested structure in dom using rect
+ <div>
+    <div>
+    </div>
+ </div>
+</div>
+17. How to 2 elements of create sibling
+-- give array of children
+18.React.creatElement is an Object ==> becomes a HTML that Browser understands
+while rendering to dom --> conversion happens
+so Object gets converted
+19.Using createElement makes code messy so that's why JSX is there --> Need of JSX
+20. Can we keep   <script src="./app.js"></script> before CDN scripts?
+21.Can we remove crossorigin?
+22.React is library that can be used for a piece of page
+it can work on it's on; work on existing project
+Framework vs library
