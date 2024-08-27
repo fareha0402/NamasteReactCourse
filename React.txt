@@ -37,3 +37,5 @@ so Object gets converted
 22.React is library that can be used for a piece of page
 it can work on it's on; work on existing project
 Framework vs library
+23. JSX is used to make the tags writing easy
+24.order of script react and react dom should be before app.js script
