@@ -1,0 +1,38 @@
+**** Ignite app using parcel ***
+1. after installing parcel use parcel to build and serve th eapplication
+2.npx parcel index.html-- command will start the application and server is up localhost:1234
+3.Parcel,webpack , vite are the bundlers that make our app fast
+4.Parcel is a beast that gives muscles to our project(skeleton)
+5*** CDN link vs npm depencies
+6. We have used CDN links to used React and react DOM now that we have npn we can install 
+react and react dom from npm as dependency
+7 ** Disadvantages of using react CDN links**
+--We are making a resource call to www.unpk
+--suppose in future ver 18 is changesd we will have to keep updating url
+-- We are depending on CDN server
+--
+*** Error of script type="module" ***
+not a js script but a module -- react is coming from node modules
+Browsers script cannot have imports and exports
+*** Parcel and it's feature ***
+Parecel is using other dependency/packages
+eg: ministry
+Making an app production ready
+---HOT replacement module-HMR( as soon as we change and save the file it reloads app)
+-uses file watching algo(c++)
+-- dev build 
+-local server for you
+--caching things - faster builds
+--.parcel-cache(files binary , caching so builds  are faster)
+--Image optimization
+
+****Production build**
+npx parcel build index.html
+dist -- build 
+compressed and minified html,css,js files -- production ready compressed
+tree shaking, compressed, minified
+***BrowserList**--
+-- parcel-cache and dist can be regenrated so no need to push on git
+---Parcel -- powers
+--transitive depencies
+-- Why react apps are fast???
