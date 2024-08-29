@@ -1,0 +1,47 @@
+*****Igniting app****
+Create your own react app
+Production ready app
+React can't do it on own
+there are lot of libraries, code and other packages to make app fast
+--- npm ----
+is a repo/standard repo for all the packages. 
+All packages/libraries/utilities is there
+---Add npm to project---
+***npm init **
+asks few things -
+after that we get package.json file --- it has all the config for npm 
+project is dependent on many dependencies -- so npm takes care of all the dependencies and packages required for a project
+Now, we can get packages into our project.lets start installing dependencies
+Most important dependency in project is a BUNDLER
+***BUNDLER**
+-- whole code needs to be compressed, cleaned before sending to server
+eg: webpack,parcel,vite
+--create react app uses webpack, babel behind the scenes 
+--Parcel (we will use thing)
+--at the end of day they do same thigs only algorithm will change
+**Parcel***
+--It will give muscles/strength to app(now it's skleton)
+-- We will install parcel
+--- npm install parcel vs npm install -D parcel
+dev dependencies VS normal dependencies
+-- required only in devlopment
+--normal used in Production 
+-- package json
+parcel version- ^2.8.3 -- latest version
+Difference between ^ and ~ (caret and tilde)
+if future there is 2.8.1 or 2.9.1 version
+caret - will install minor version
+tilde - will install major version 3.1.0
+Always use caret as major upgrade breaks many functionalities
+***** PAckage.json(configuration for npm) vs package-lock.json (keeps track of exact version of dependency that was installed )
+--Eg: something workinh in my local but not working in my Production
+--- so package.lock.json keep a hash to verify that same version is deployed on prod as in local(integrity)
+**Node modules**(db for npm, it contains actual data for all dependencies)
+--transitive dependencies
+---parcel install other libraries as well
+-- what should be uploaded in git
+--package-lock.json and package .json
+-- not node modules
+add gitignore 
+as we can regenerate node modules using package json on server
+

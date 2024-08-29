@@ -1,0 +1,23 @@
+{
+  "name": "namaste_react",
+  "version": "1.0.0",
+  "description": "this is namste react -course",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fareha0402/NamasteReactCourse.git"
+  },
+  "keywords": [],
+  "author": "Fareha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fareha0402/NamasteReactCourse/issues"
+  },
+  "homepage": "https://github.com/fareha0402/NamasteReactCourse#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}
