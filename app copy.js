@@ -1,8 +1,10 @@
-import React from "react"
-import ReactDOM from "react-dom/client"
-
+// core react
 const heading = React.createElement('h1',{},'Hello World from React') 
+// react dom 
+// to give attributes to tag --> {}
 const headingWithAttr = React.createElement('h1',{id:'heading',},'Hello World from React')
+//  const root = ReactDOM.createRoot(document.getElementById('root'))
+//  root.render(headingWithAttr)
  console.log(heading) // Object
 
 Eg:
