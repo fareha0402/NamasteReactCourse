@@ -1,0 +1,12 @@
+*** to execute the project **
+command
+npm parcel index.html
+a dev build will get created and serve in local server
+Production and dev build is different so the commands
+*** Creating scripts to run the app ***
+** Tips to start the project **
+-- in package.json
+-- script commands
+--- npm will execute npm run serve, npm run start, npm run build serve in dev mode , build
+--- npm start is same as npm run start , behind the scences npm commans will run
+*** JSX ***
