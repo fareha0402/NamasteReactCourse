@@ -26,3 +26,14 @@ Js engine can only understand ECMAScript ES6(pure JS)
 --BABEL is js compiler/transpiler( converst code into js which js engile understands)
 =>> JSX code --> React.createElememt -->React elememt  (object)--> html elememt(render)
 BABEL converts jsx code to react.createElememt so react understands it and it gets rendered properly
+___JSX__vs__HTML
+class is className
+attributes -- we have to use camel case
+-- how to use img tag with img scr, anchor tag
+
+** if you use multiple line in JSX we have to use parenthesis
+** if single line no need
+const jsxheading =(<h1 id="heading" className="head">
+    Hello from JSX
+    </h1>)
+
