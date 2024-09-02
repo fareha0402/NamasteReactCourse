@@ -5,3 +5,4 @@ legacy projects use class based components
 
 React functional componenet is a basic JS functional
 -- use capital letter to create a functional component
+-- component inside component ---(Component composition)
