@@ -10,3 +10,19 @@ Production and dev build is different so the commands
 --- npm will execute npm run serve, npm run start, npm run build serve in dev mode , build
 --- npm start is same as npm run start , behind the scences npm commans will run
 *** JSX ***
+
+--JSX is html/xml like syntax used in react not html inside js
+--jsx is a different syntax
+--fundamental difference bet htm and jsx
+--jsx is nnot part of react
+-- to make user friendly we use jsx
+
+*** can js engine understand jsx?**
+Js engine can only understand ECMAScript ES6(pure JS)
+--it's not pure js so browsers and engines will give error with JSX
+***Parcel is doing the job behind the scences**
+---The code(JSX) is TRANSPILED before it goes to js engines --- converted to code that browser can understand
+--using ***BABEL** (transpilation is done)-- it's a package installed by Parcel
+--BABEL is js compiler/transpiler( converst code into js which js engile understands)
+=>> JSX code --> React.createElememt -->React elememt  (object)--> html elememt(render)
+BABEL converts jsx code to react.createElememt so react understands it and it gets rendered properly

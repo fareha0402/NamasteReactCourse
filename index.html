@@ -5,13 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Namaste React</title>
     <link rel="stylesheet" href="./index.css">
-    <h1>Hello above root</h1>
     <div id="root"> // React is only working inside id='root' other things remain same
         <!-- <h1>Hello world</h1> -->
-         <!-- Below tag is REPLACED by ReactDom content which is loaded from app.js-->
-         <h1>Fareha is here</h1>
+         <!-- Below tag is REPLACED not appended by ReactDom content which is loaded from app.js-->
+         <h1>NOT RENDERED</h1>
     </div>
-    <h1>Hello below root</h1>
 </head>
 <body>
    <script type="module" src="./app.js"></script>
