@@ -1,0 +1,19 @@
+Planning /wire frame/design 
+** Header
+-- logo
+--about us
+--cart
+**body
+--search bar
+--Restaurant container
+--Restaurant cards
+-- img-name of res - ETA -- Cusines
+** Footer
+-- copyright
+--links
+---Now we start coding
+** When we are repeating the code make it reusable function /component
+so Restaurant card component
+---config driven app
+api is controlling the app / ui
+live data
