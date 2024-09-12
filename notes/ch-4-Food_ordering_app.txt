@@ -17,3 +17,5 @@ so Restaurant card component
 ---config driven app
 api is controlling the app / ui
 live data
+-- props 
+passing arguments to function

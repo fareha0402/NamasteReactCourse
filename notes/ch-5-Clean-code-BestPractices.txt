@@ -1,0 +1,8 @@
+-- app.js 
+single file containing everythig
+Best Practices 
+- separate file for separate components
+-all  the main code in react we keep under src folder
+==Four components in one file we have
+-- but code that we right is for humans
+-- so for readability its better to write separate components - small files

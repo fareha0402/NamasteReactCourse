@@ -18,8 +18,20 @@
     padding: 5px;
     margin: 5px;
 }
+.res-Container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .resCard{
-    border: 1px solid black;
-    width: 200px;
+    width: 300px;
+    padding: 5px;
     
+}
+.resCard:hover{
+    cursor: pointer;
+    border: 1px solid black;
+
+}
+.resLogo{
+    width: 200px;
 }
