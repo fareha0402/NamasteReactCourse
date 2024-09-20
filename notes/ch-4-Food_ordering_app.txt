@@ -14,8 +14,10 @@ Planning /wire frame/design
 ---Now we start coding
 ** When we are repeating the code make it reusable function /component
 so Restaurant card component
----config driven app
+---config driven application(system  design )
+Controlling the UI using the data (config) that we get from backend 
 api is controlling the app / ui
 live data
 -- props 
 passing arguments to function
+--Destructure the props
