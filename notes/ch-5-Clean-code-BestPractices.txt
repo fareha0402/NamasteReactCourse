@@ -1,8 +1,22 @@
 -- app.js 
-single file containing everythig
+single file containing everything
 Best Practices 
 - separate file for separate components
 -all  the main code in react we keep under src folder
 ==Four components in one file we have
 -- but code that we right is for humans
 -- so for readability its better to write separate components - small files
+-- Advantages of react
+
+---- Imports /Exports
+-- Default Exports(single file single export) Vs 
+Named Exports(when single file you have to export multiple things)
+
+**** Default ***
+export default Component
+import component from "path";
+******
+
+***Named***
+export const Component
+import {Component} from "path"
