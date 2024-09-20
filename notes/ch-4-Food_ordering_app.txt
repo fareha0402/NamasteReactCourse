@@ -14,10 +14,25 @@ Planning /wire frame/design
 ---Now we start coding
 ** When we are repeating the code make it reusable function /component
 so Restaurant card component
----config driven application(system  design )
+---**** config driven application(system  design )
 Controlling the UI using the data (config) that we get from backend 
 api is controlling the app / ui
 live data
 -- props 
 passing arguments to function
 --Destructure the props
+** use - MAP for running for loop
+** map, filter and reduce - used in react
+
+**Body.js:9 Warning: Each child in a list should have a unique "key" prop.
+*** when we are looping over list we have to ALWAYS give a unique key
+** why KEY ??
+-->when we have components at same level, these components shoul have uniqque id
+--> WHY Key is required?
+--- suppose a new component comes or gets addded to the list , Dom/react doesn't know where in dom to addded
+so it will re render the whole list
+--By giving them unique ID- and new restaurant come with xyz ID .. only one restaurant will be rendered instead of all 15 restaurant
+-- We need to uniquely identify the items when looping
+--- Never use indexes as keys(not recommended)
+---it's anti pattern
+not using key(not acceptable)<<< index<<<<<<<<unique id
