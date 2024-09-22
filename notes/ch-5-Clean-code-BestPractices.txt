@@ -44,5 +44,8 @@ State is a keyword in react
 -- import from react as Named import
 import {useState} from "react"
 It maintains state of Component
-
+    const [listofRestaurants,setListofRestaurants] = useState(restaurantsList)
+    destructuring on functionality
+        const arr = useState(restaurantsList)
+        const listofRestaurants = arr[0]
 2. useEffect ---
