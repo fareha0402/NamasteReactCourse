@@ -1,0 +1,20 @@
+** React uses reconciliation algorithm is aka React fibre( new way react 16)**
+HOW it's done
+-- suppose dom has 9 res cards (Previous VDOM)--> Ui Button Clicked  --> 3 res cards (Update dVDOm) 
+VDOM 
+- is representation of actual DOM ( normal JS nested objects) --> React Element --> React.createElement
+console.log(<Body/>) 
+Actual dom is html dom tags
+--
+**Diff algo finds difference between 2 Vdom
+updated and previous
+9-3 = 6 nodes difference between VDOM
+then actual dom is updated 
+
+Findind difference betwee HTM is tough 
+Finding difference between Objects is fast so VDOM makes React fast and update UI
+
+**Why React is fast
+-- Diff algo
+-- VDOM
+--it finds the differnece between VDOM and update  the UI

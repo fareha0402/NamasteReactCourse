@@ -20,3 +20,29 @@ import component from "path";
 ***Named***
 export const Component
 import {Component} from "path"
+
+
+*** Top rated restaurant functionality
+When we filter, UI dooesn't changes automatically if we don't use Hooks
+--React is efficient in Dom Manipulation
+--To keep data and UI layer consistent (in sync) -- this is the problem all frameworks are solving
+So React is solving this problem- 
+if we make list of restaurant which is a normal JS variable
+so we need to make state variable 
+
+*** State Variable***
+State is a keyword in react
+***We use react hook ---- Use state
+
+****Hooks ***
+--are normal JS function given to us by React,function has some logic written by React
+---Hooks are normal JS Utility functions given by Facebook devlopers
+--- We need import react hook (Utility functions)
+
+***Hooks*** (90% time below hooks are used)
+1. useState -- to generate/create state variables
+-- import from react as Named import
+import {useState} from "react"
+It maintains state of Component
+
+2. useEffect ---
