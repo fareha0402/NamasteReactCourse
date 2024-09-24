@@ -39,3 +39,13 @@
    cursor: pointer;
    padding: 10px
 }
+.shimmer-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-cards{
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    background-color: antiquewhite;
+}

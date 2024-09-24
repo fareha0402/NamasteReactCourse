@@ -1,0 +1,47 @@
+Architecture
+Monolith Vs microservices Architecture
+---
+API,UI,Auth code,DB code, SMS code
+Everything in same project(JSP)
+
+Microservices
+separate UI,API,UI,Auth code,DB code, SMS code
+
+How to make API call
+We don't want to use mock data
+
+**** 2 approaches how web app makes API call **
+
+1. PAGE LOADS --> API CALL --> RENDER UI 
+2. PAGE LOADS --> RENDER UI --> API CALL --> RE-RENDER UI ( REACT FOLLOWS THIS) -- why???
+
+better UX , better approach is 2nd
+because page is frozen in 1st approach
+so in second we render skeleton -- user experience is better
+we are rendering twice - no impact as react renders fast
+
+
+fetch is given to us by browser 
+will fetch datad from api
+Can we use swiggy's api to get data on fly from server using fetch
+use fetch to make api call
+2 ways:
+then and catch
+async and await -- better
+
+CORS error
+
+if my list is empty -->
+we use spinner and loading is done
+Showing spinner is not a good way it's broken experience UX --
+
+Currently used in industry
+*** Shimmer UI ---> mock UI rendered whiel api call is beingmade and UI and data is updated
+We load a fake page/skeleton till the actual page loads
+Meanwhile api returns data --> so user can anticipate what will be loaded
+(youtube and swiggy use Shimmer UI)
+
+as soon a page loads , user sees Shimmer UI, user will anticipate that cards will be coming
+user won't get impression that website is slow
+
+*** Conditional Rendering** 

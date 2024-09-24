@@ -2,7 +2,6 @@ import { CDN_URL } from "../Utils/constants"
 const RestaurantCard = (props) =>{
     const {resData} = props // Destructuring
     // const resItem = props.resData.info
-    console.log(resData.info)
     const imgSrc= CDN_URL + resData.info.cloudinaryImageId
     return(
         <div className="resCard">

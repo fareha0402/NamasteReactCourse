@@ -1,0 +1,5 @@
+hook is JS functiion which react gives for specific use cases
+useEffect will be imported as named import
+
+take 2 arguments in useEffect
+ if we have to render something after we make api call --> we need to use useEffect

@@ -17,4 +17,5 @@ Finding difference between Objects is fast so VDOM makes React fast and update U
 **Why React is fast
 -- Diff algo
 -- VDOM
---it finds the differnece between VDOM and update  the UI
+--it finds the differnece between VDOM and update  the UI 
+
