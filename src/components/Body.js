@@ -22,12 +22,9 @@ const Body = () => {
            setListofRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
         }
 
-        // Conditional Rendering
-        if(listofRestaurants.length === 0){
-            return<ShimmerUI/>
-        }
-    return (
-        <div className="body">
+        // ****  Conditional Rendering **
+        return listofRestaurants.length === 0 ? (<ShimmerUI/>):(
+            <div className="body">
             {/* <div className="search">Search</div> */}
             <div className="filter">
                 <button className="filter-btn" onClick={() => {
@@ -41,8 +38,6 @@ const Body = () => {
                 ))}
             </div>
         </div>
-        
-    )
-    
+        )
 }
 export default Body

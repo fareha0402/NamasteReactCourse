@@ -44,8 +44,13 @@
     flex-wrap: wrap;
 }
 .shimmer-cards{
-    width: 350px;
-    height: 400px;
-    padding: 20px;
-    background-color: antiquewhite;
+    width: 250px;
+    height: 300px;
+    margin: 10px;
+    background-color: rgb(239, 236, 235);
+}
+.login-btn{
+    padding: 0 10px;
+    margin: 10px;
+    cursor: pointer;
 }

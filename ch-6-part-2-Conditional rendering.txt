@@ -1,0 +1,20 @@
+**State variable Vs normal JS variable***
+Add Logout and login button 
+---> IF we use btnName as normal JS variable
+let btnName = 'login'
+when we click on buttonit should update to Logout although value gets update but UI
+ doesn't update
+JS variable -- don't update the UI 
+so useState hook comes into picture
+***State variable***
+const [btnNameReact,setbtnNameReact] = useState('Login')
+
+
+
+Whenever StateVariable will change React will re -render header componet with Update dvalues
+-- triggers reconciliation as soon a we click button
+-- if we use normal js variable Ract wont be able to tract the change
+
+
+React is  refreshing whoel header or button?-
+--- Entire header is rendered again

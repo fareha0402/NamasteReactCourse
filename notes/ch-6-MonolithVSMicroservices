@@ -45,3 +45,4 @@ as soon a page loads , user sees Shimmer UI, user will anticipate that cards wil
 user won't get impression that website is slow
 
 *** Conditional Rendering** 
+if list is empty then return Shimmer uI otherwise load component
