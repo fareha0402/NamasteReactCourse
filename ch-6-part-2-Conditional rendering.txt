@@ -17,4 +17,14 @@ Whenever StateVariable will change React will re -render header componet with Up
 
 
 React is  refreshing whoel header or button?-
---- Entire header is rendered again
+--- Entire header is rendered again , reat was keeping track of btnNameRact and update when set function is called
+-- updated value is given to btnNameReact using useState
+
+
+--- Const -const [btnNameReact,setbtnNameReact] = useState('Login')
+Are we not changing btnName which is const
+
+--- React render the header component again and see only button name is changed 
+so react will update the name of button and render , it's not initialising the name agian consts
+
+-- React exactly knows what to change so React is very fast in Dom manipulation
