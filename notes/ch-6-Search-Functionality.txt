@@ -1,0 +1,13 @@
+filter res cards and updat eUI on click of search button
+to get data from input box , to track the value I have to bindit to local state variable in react with empty string 
+** we are doing one way data** input box not working 
+value is bind to default value of 
+*** to make it 2 way binding**
+so we need to update Search text on change event handler as input changes
+
+
+WHENEVER STATE VARIABLES UPDATE REACT RE RENDERS THE COMPONENT
+
+search functionality - filtered and list list copy
+
+*** CODE SLOW***
