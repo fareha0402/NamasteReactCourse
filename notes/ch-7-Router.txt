@@ -1,0 +1,11 @@
+Router
+npm i react-router-dom
+create a react configuration insisde app 
+createBrowserRouter is used to create a instance for router
+where we give routes as list
+
+We need RouterProvided to load the appRouter
+Creat Error page -> custom
+
+useRouteError --> hook
+We can get extra information about Error

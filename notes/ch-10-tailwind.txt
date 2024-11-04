@@ -1,0 +1,12 @@
+insatll tailwind for parcel
+npx tailwindcss init -- tailwind.config.js is created 
+
+---  we are intialising the Tailwind
+
+Tailwind-
+I wokrks with all framework availabele, it's generic 
+postcss - is a toll to transform CSS with JS
+tailwind css uses postcss
+
+--- create postcss config file as well
+gives name of class to apply css

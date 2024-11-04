@@ -28,23 +28,26 @@ const Body = () => {
         return listofRestaurants.length === 0 ? (<ShimmerUI/>):(
             <div className="body">
     
-            <div className="filter">
-            <div className="search">
-                <input type="text" className="search-input" value={searchText} onChange={(e) => {
+            <div className="flex">
+            <div className="search m-4 px-4 ">
+                <input type="text" className="m-4 p-x-4 border border-solid border-black" value={searchText} onChange={(e) => {
                     setSearchText(e.target.value)
                 }}></input>
-                <button onClick={() => {
-                    debugger
+                <button
+                className="bg-green-200 m-4 px-4 py-1 rounded-lg"
+                 onClick={() => {
                    const searchList =  listofRestaurants?.filter((res) => res.info.name.toLowerCase().includes(searchText.toLowerCase()))
                    setFilteredRestaurant(searchList)
-                }}>Search</button>
+                }} >Search</button>
             </div>
-                <button className="filter-btn" onClick={() => {
+            <div className="flex m-4 p-4 items-center">
+            <button className="px-4 py-2 bg-gray-100 rounded-lg" onClick={() => {
                     const filteredList = listofRestaurants?.filter(res => res.info.avgRating > 4.3)
-                    setListofRestaurants(filteredList)
+                    setFilteredRestaurant(filteredList)
                 }}>Top Rated restaurant</button>
             </div>
-            <div className="res-Container">
+            </div>
+            <div className="flex flex-wrap">
                { filteredRestaurant?.map((restaurant) => (
                     <RestaurantCard key={restaurant.id} resData={restaurant}/>
                 ))}

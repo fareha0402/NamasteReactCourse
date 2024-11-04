@@ -1,0 +1,27 @@
+To keep track of header when routing
+we lose the control of header
+** so we use children routes **
+
+if - path is /- body
+if -path is /about - 
+if - path is /contact -load contact us
+
+so Outlet is the <Outlet/> is atunnel so all the components based on path it loads the component
+-- Never use anchor tag to navigate --> whole page got refreshed\\
+-- always use<Link> -- page is not reloaded- not refresjhed -- so the navigation is super smooth
+
+That is why React app - is known as SPA single page application
+only components are loaded in index.html
+in single page all the components are loaded --> never page is changed or reload/refresh
+
+
+***Two types of Routing**
+1.Client side Routing (
+here we are not making any network call to load the page
+We have all the componnets -> no network call to show the html
+only api calls to get datda-- so React is Clinet side Routing
+)
+2.Serve side Routing(
+    we have index.html, contact.html, about.html --> 
+    when we click on links we make a network call and page comes from server
+)

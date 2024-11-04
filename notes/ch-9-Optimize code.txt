@@ -1,0 +1,35 @@
+-SRP makes code 
+modular
+testable
+scalable
+abstract the responsibility from component and keep it in inside utility hooks
+- Custom hooks makes code
+readable
+testable
+
+Hooks are helper functions
+so create hooks under utility folder
+separate files for separate hooks
+Always start hook with 'use'- useState,useEffect,useParams,useRestaurantMenu
+-how we write hook
+- hooks are normal JS functions
+- see the contract - What will be th input and output
+- restaurant id -s the input, fetch the data and return the restaurant information
+- create online/offline status - custom hooks
+- lazy loading
+// chunking
+dynamc bundling
+code splitting
+on demand loading
+dynamic import
+ --- lazy()
+ -- takes dynamic import 
+ -- Suspense - in router
+
+ const Grocery = lazy(() => import('./component/grocery'))
+
+ {path:'/grocery',
+ element:
+ <Suspense fallback =>{<h1>loading ....</h1>}>
+<Grocery/> 
+ </Suspense>}

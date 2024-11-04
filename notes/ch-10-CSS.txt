@@ -1,0 +1,16 @@
+// Jo dikhta hai wo bikta hai
+-- How to beautify our application
+Ways to add styles: --
+1.normal css
+2.scss/Sass- writing css with some super powers- little more advance and easy(not recommended way)
+3.Styled components
+CSS librarires and framework makes our life easy
+export components which are already styles
+Pre built components
+4.Material UI -- react component library , which gives component
+5.Bootstrap- html,css, js library
+6.Chakra UI
+7.ant design ui framework
+8.Tailwind --- latest framework
+
+

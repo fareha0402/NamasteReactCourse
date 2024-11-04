@@ -11,3 +11,8 @@ WHENEVER STATE VARIABLES UPDATE REACT RE RENDERS THE COMPONENT
 search functionality - filtered and list list copy
 
 *** CODE SLOW***
+
+** Ppl who code slow , debug very less**
+
+
+CORS proxy.url

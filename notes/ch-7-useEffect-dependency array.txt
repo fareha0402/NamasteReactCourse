@@ -1,0 +1,24 @@
+-- useEffect-- when the ui is updated , use effect is called and UI is re rendered
+Dependency array
+==> if no Dependency array 
+useEffect(() => {
+    console.log('Use effect is called on every render')
+})  
+==> if dependency array is empty
+ useEffect(() => {
+    console.log('Use effect is called on every render')
+},[]) 
+==> it dependency array [btnNameReact]Use effect is called only be called when btnNameReact is updated 
+ useEffect(() => {
+    console.log('Use effect is called on every render')
+},[btnNameReact])  
+
+
+*** Best practices**
+Never declare/create  useState hook outside of component
+Declare hooks insde body of function component
+Always declare useState on th top of component
+Js is single synchronous language
+never create useSate inside if else, for loop , functions -- this can create inconsistency in code
+
+State variables are meant to created inside component at the top
