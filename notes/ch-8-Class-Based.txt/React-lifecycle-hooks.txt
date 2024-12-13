@@ -1,0 +1,70 @@
+make About --> class based componnets
+-Constructor
+-render
+-componetdidMount
+
+Use of componetdidMount -- to make api calls
+
+Constructor Parent
+AboutClass.js:15 Render Parent
+UserClass.js:5 Constructor Child
+UserClass.js:15 Render child
+UserClass.js:12 componentDid mount child
+AboutClass.js:12 componentDid mount parent
+
+--- componentDidMount is similar to useEffect
+loads UI-- renders- api call ->renders
+
+Constructor Parent
+AboutClass.js:15 Render Parent
+UserClass.js:5 ConstructorChild First
+UserClass.js:15 Render child First
+UserClass.js:5 ConstructorChild Second
+UserClass.js:15 Render child Second
+UserClass.js:12 componentDid mount child First
+UserClass.js:12 componentDid mount child Second
+AboutClass.js:12 componentDid mount parent
+
+
+**Render Phase** ---
+Constructor 
+render
+**Commit Phase** ---
+then dom is updated
+componentDidMount is called -- best place to make API call
+OPTIMIZES the RENDER PHASE (BATCH THE PHASES)
+React batch the render cycle of 2 children then Commit phase will be batched for both children
+
+React lifecycle diagram
+https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/
+
+Why react is fast
+-- Recat has 2 phases Render and Commit phase
+-- When component is mounting (constructor & render isa called)
+-Commit Phase(then react updates the DOM, then component did mount is called) -- So best place to make api call
+
+Constructor Parent ---- Render phase
+AboutClass.js:15 Render Parent ---  Render phase
+UserClass.js:5 ConstructorChild First---  Render phase
+UserClass.js:15 Render child First---  Render phase
+UserClass.js:5 ConstructorChild Second---  Render phase
+UserClass.js:15 Render child Second---  Render phase
+UserClass.js:12 componentDid mount child First **-- Commit phase
+UserClass.js:12 componentDid mount child Second **-- Commit phase
+AboutClass.js:12 componentDid mount parent **-- Commit phase
+
+-Parent Constructor
+-Parent render
+   - First Child Constructor
+   - First Child render
+
+   - Second Child render
+   - Second Child render
+
+---<<DOM UPDATION - IN SINGLE BATCH>>---
+   -First Child componentDidMount
+   -First Child componentDidMount
+   
+-Parent componentDidMount   
+
+DOM updation is very expensive -- so batching the phase makes React fast(Render phase is fast, Commit phase takes time)

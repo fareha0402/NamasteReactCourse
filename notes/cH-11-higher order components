@@ -1,3 +1,11 @@
 HOC-
 takes componenst as input , adds extra features (enhances)to componnet and return it 
 
+Promoted label on cards
+
+Pure functions
+-- HOC are pure functions
+It will not change the behaviour of card /no modifications
+-- just adding something /enhance
+--passing props --
+Code will not changed

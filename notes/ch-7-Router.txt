@@ -9,3 +9,11 @@ Creat Error page -> custom
 
 useRouteError --> hook
 We can get extra information about Error
+
+You can navigate to next page without reloading the page
+Link - componnent given to us by react router dom
+instead of href anchor tag we us elink, works exactly
+only differnece syntax]
+<link >
+dynamic routing
+/restaurant/restaurant name

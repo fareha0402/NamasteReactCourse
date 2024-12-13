@@ -1,6 +1,7 @@
 import RestaurantCard from "./RestaurantCard";
 import ShimmerUI from "./Shimmer"
 // import restaurantsList from '../Utils/restaurants.json';
+import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 const Body = () => {
     //Local Stateful variable,Superpowerful Variable
@@ -49,7 +50,7 @@ const Body = () => {
             </div>
             <div className="flex flex-wrap">
                { filteredRestaurant?.map((restaurant) => (
-                    <RestaurantCard key={restaurant.id} resData={restaurant}/>
+                 <Link key={restaurant.id} to={'/restaurants/'+ restaurant.info.id}><RestaurantCard  resData={restaurant}/></Link>   
                 ))}
             </div>
         </div>

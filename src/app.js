@@ -8,6 +8,7 @@ import Contact from './components/Contact'
 import Error from './components/Error'
 import Body from "./components/Body"
 import RestaurantMenuPage from './components/RestaurantMenuPage'
+import AboutClass from "./components/AboutClass"
 const AppLayout = () => {
     return (
         <div className="app">
@@ -27,12 +28,13 @@ const appRouter = createBrowserRouter([
                 },
             {
             path:'/about',
-            element:<About/>
+            element:<AboutClass/>
             },
             {
                 path:'/contact',
                 element:<Contact/>
                 },
+                // dynamic routing
             {
                 path:'/restaurants/:resId',
                 element:<RestaurantMenuPage/>

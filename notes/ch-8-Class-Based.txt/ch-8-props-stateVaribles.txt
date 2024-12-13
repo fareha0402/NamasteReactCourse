@@ -1,0 +1,31 @@
+Class based component are used in legacy projects
+Many interviews asked
+Comparison
+React lifecycle works 
+
+In About us page we will show the info from Git hub and show the name
+
+Normal Js class -Class based componenst
+
+keyword class
+extends react.component
+render method -> return some JSX
+
+props - in class based components
+
+how to create state in class based components
+- when you create instance of a class
+state is created(loading class based component )
+- so constructor is called - so best place to create state is constructor
+-when you are invoking a function- useState(functions)
+
+this.state is a big object so declare all teh states variable in it
+- Can be used anywhere in class
+update state variables
+like we have setCount is functional components
+we have setState in Class based components 
+
+setState({})
+-- pass the state varibales that we want to update
+--only portion(find diff of objects) will be updated
+NEVER UPDATE STATE VARIABLES DIRECTLY

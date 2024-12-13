@@ -4,8 +4,8 @@ const RestaurantCard = (props) =>{
     // const resItem = props.resData.info
     const imgSrc= CDN_URL + resData.info.cloudinaryImageId
     return(
-        <div className="resCard">
-            <img className="resLogo" src={imgSrc}></img>
+        <div className="w-[300] p-4 cursor-pointer">
+            <img className="w-[200]" src={imgSrc}></img>
             <h3>{resData.info.name}</h3>
             <h4>{resData.info.avgRating} stars</h4>
             <h4>{resData.info.areaName}</h4>
