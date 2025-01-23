@@ -1,5 +1,5 @@
 -SRP makes code 
-modular
+modular- break code to different modules 
 testable
 scalable
 abstract the responsibility from component and keep it in inside utility hooks
@@ -17,10 +17,12 @@ Always start hook with 'use'- useState,useEffect,useParams,useRestaurantMenu
 - restaurant id -s the input, fetch the data and return the restaurant information
 - create online/offline status - custom hooks
 - lazy loading
-// chunking
-dynamc bundling
+// chunking - smaller codes
+
+dynamic bundling
 code splitting
 on demand loading
+lazy loading
 dynamic import
  --- lazy()
  -- takes dynamic import 
@@ -33,3 +35,10 @@ dynamic import
  <Suspense fallback =>{<h1>loading ....</h1>}>
 <Grocery/> 
  </Suspense>}
+
+ if js file size increases - how to optimize it for large scale production ready application 
+ so you need to break you application into smaller pieces
+ -Either we can bundle for all files 
+ -code splitting ( multiple files)
+
+ so we will make smaller bundle for tshese files

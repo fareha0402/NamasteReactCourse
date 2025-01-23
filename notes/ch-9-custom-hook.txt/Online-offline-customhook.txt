@@ -1,0 +1,12 @@
+Custom hooks to fetch data api
+1.abstract the code 
+2. Online offline feature
+
+User is offline - no internet
+
+finalize teh contract
+
+input and output
+
+Start Components with capital letters
+start custom hooks with 'use' keyword

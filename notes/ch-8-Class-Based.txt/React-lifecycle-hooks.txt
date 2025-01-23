@@ -68,3 +68,9 @@ AboutClass.js:12 componentDid mount parent **-- Commit phase
 -Parent componentDidMount   
 
 DOM updation is very expensive -- so batching the phase makes React fast(Render phase is fast, Commit phase takes time)
+
+// UPDATION Phase
+--componentDidMount called in that API call is being made
+-- then set state to update the state
+--- again Render is acalled and update the DOMs and refs
+-- Componentdid update is called

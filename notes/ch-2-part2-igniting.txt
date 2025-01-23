@@ -7,8 +7,8 @@
 6. We have used CDN links to used React and react DOM now that we have npn we can install 
 react and react dom from npm as dependency
 7 ** Disadvantages of using react CDN links**
---We are making a resource call to www.unpk
---suppose in future ver 18 is changesd we will have to keep updating url
+-- We are making a resource call to www.unpk
+-- suppose in future ver 18 is changesd we will have to keep updating url
 -- We are depending on CDN server
 --
 *** Error of script type="module" ***
@@ -18,13 +18,13 @@ Browsers script cannot have imports and exports
 Parecel is using other dependency/packages
 eg: ministry
 Making an app production ready
----HOT replacement module-HMR( as soon as we change and save the file it reloads app)
--uses file watching algo(c++)
+--- HOT replacement module-HMR( as soon as we change and save the file it reloads app)
+- uses file watching algo(c++)
 -- dev build 
--local server for you
---caching things - faster builds
---.parcel-cache(files binary , caching so builds  are faster)
---Image optimization
+- local server for you
+-- caching things - faster builds
+-- .parcel-cache(files binary , caching so builds  are faster)
+-- Image optimization
 
 ****Production build**
 npx parcel build index.html

@@ -9,3 +9,18 @@ It will not change the behaviour of card /no modifications
 -- just adding something /enhance
 --passing props --
 Code will not changed
+
+----
+Controlled and uncontrolled components
+-- lifting the data up
+-- manage the data
+--all react applications have 2 layers
+data and UI layer
+
+-- data (state,props,local variables, js )
+--UI(JSX)
+------
+
+How Data layer is properly managed 
+feature -If we click on restaurant menu, we have different items(sections)
+ 

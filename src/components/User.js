@@ -1,8 +1,13 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
 const User = (props) =>{
     const [count,setCount] = useState(0)
     const count1 = useState(1)
+
+    useEffect(()=>{
+        //api call
+    },[])
+
     return(
     <div className="p-3 border border-black bottom-1">
         <h1>Name: {props.name} </h1>

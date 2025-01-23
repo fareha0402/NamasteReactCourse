@@ -2,17 +2,24 @@ import React from "react"
 class UserClass extends React.Component{
     constructor(props){
         super(props)
-            console.log('ConstructorChild', props.name)
+            // console.log('ConstructorChild', props.name)
         this.state={
             count:0,
             count1:1
         };
     }
     componentDidMount(){
-        console.log('componentDid mount child',this.props.name)
+        // console.log('componentDid mount child',this.props.name)
+    }
+    componentDidUpdate(){
+        console.log('did update')
+    }
+    
+    componentWillUnmount(){
+        console.log('will unmount')
     }
     render(){
-        console.log('Render child',this.props.name)
+        // console.log('Render child',this.props.name)
         return(
         <div className="p-3 border border-black bottom-1">
         <h1>Name:{this.props.name} </h1>
