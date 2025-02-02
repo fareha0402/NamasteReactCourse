@@ -1,0 +1,20 @@
+Tailwind
+Accordian feature
+map categories
+Suppose we want to build accordian if first is open then others should close
+react dev tools chrome -- what it is PROFILER
+
+Controlled and uncontrolled components
+Parent component has control over children components
+--Restaurant Memu should controll rest categories
+-- if one accordiaon is open others should close
+-- Restaurant category is child(Controlled component) and RestaurantMenu is Parent.
+
+Props are passed from Parent to child
+
+lifting the state up
+--
+
+Props drilling is problem
+React context is solution(global object)
+example - common use 

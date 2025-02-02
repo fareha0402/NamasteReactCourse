@@ -3,13 +3,14 @@ import ShimmerUI from "./Shimmer"
 import useOnlineStatus from "../Utils/useOnlineStatus";
 // import restaurantsList from '../Utils/restaurants.json';
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import {  useContext, useEffect, useState } from "react";
+import UserContext from "../Utils/UserContext";
 const Body = () => {
     //Local Stateful variable,Superpowerful Variable
     const [listofRestaurants,setListofRestaurants] = useState([])
     const [filteredRestaurant,setFilteredRestaurant] = useState([])
     const [searchText,setSearchText] = useState('')
-    
+    const {loggedInUser,setUserName} = useContext(UserContext)
     // let listofRestaurants = restaurantsList // Normal JS variable
     // let listofRestaurants = restaurantsList // Normal JS variable
 
@@ -35,8 +36,8 @@ const Body = () => {
             <div className="body">
     
             <div className="flex">
-            <div className="search m-4 px-4 ">
-                <input type="text" className="m-4 p-x-4 border border-solid border-black" value={searchText} onChange={(e) => {
+            <div className="m-4 px-4 ">
+                <input type="text" className="m-4 p-1 border border-solid border-black" value={searchText} onChange={(e) => {
                     setSearchText(e.target.value)
                 }}></input>
                 <button
@@ -52,12 +53,19 @@ const Body = () => {
                     setFilteredRestaurant(filteredList)
                 }}>Top Rated restaurant</button>
             </div>
+            <div className="flex m-4 p-4 ">
+                <input className="border border-black" value={loggedInUser} onChange={(e) =>{
+                    setUserName(e.target.value)
+                }}></input>
+            </div>
             </div>
             <div className="flex flex-wrap">
                { filteredRestaurant?.map((restaurant) => (
-                 <Link key={restaurant.id} to={'/restaurants/'+ restaurant.info.id}><RestaurantCard  resData={restaurant}/></Link>   
+                 <Link key={restaurant.id} to={'/restaurants/'+ restaurant.info.id}>
+                    <RestaurantCard key={restaurant.id} resData={restaurant}/></Link>   
                 ))}
             </div>
+           
         </div>
         )
 }

@@ -1,0 +1,13 @@
+user context is solution to props drilling 
+globally available
+useContext takes creatcontext
+useContext(UserCOntext)
+-- classbase
+userContext .Consumer -- to use in class based
+can we use multiple times- yess
+suppose to modily context
+userContext.provider value= {}
+we overwrite the default value
+// we created local state variable and tied with global variable of context
+// read write anywhere
+everytime the state variables changes we update the context 
