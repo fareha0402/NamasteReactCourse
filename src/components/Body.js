@@ -32,7 +32,7 @@ const Body = () => {
             return(<h1>You are offline!! Please check internet connection</h1>)
         }
         // ****  Conditional Rendering **
-        return listofRestaurants.length === 0 ? (<ShimmerUI/>):(
+        return listofRestaurants?.length === 0 ? (<ShimmerUI/>):(
             <div className="body">
     
             <div className="flex">

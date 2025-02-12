@@ -11,6 +11,9 @@ import RestaurantMenuPage from './components/RestaurantMenuPage'
 import AboutClass from "./components/AboutClass"
 import Grocery from "./components/Grocery"
 import UserContext from "./Utils/UserContext"
+import { Provider } from "react-redux"
+import appStore from "./Utils/store/appStore"
+import Cart from "./components/Cart"
 const AppLayout = () => {
     // auth code, api call and get some data
     const [userName,setUserName] = useState()
@@ -23,7 +26,9 @@ const AppLayout = () => {
         setUserName(data.name)
     },[])
     return (
-        // To set the value in context we use Provider and give value. so context will not use default value
+        // Provide store to react and store as props, just like context provider we have provider
+        <Provider store={appStore}>
+        {/* {To set the value in context we use Provider and give value. so context will not use default value} */}
         <UserContext.Provider value={{loggedInUser : userName, setUserName}}>
         <div className="app">
             <Header/>
@@ -31,6 +36,7 @@ const AppLayout = () => {
             <Outlet/>
         </div>
         </UserContext.Provider>
+        </Provider>
     )
 }
 const appRouter = createBrowserRouter([
@@ -48,6 +54,10 @@ const appRouter = createBrowserRouter([
             {
                 path:'/contact',
                 element:<Contact/>
+                },
+                {
+                    path:'/cart',
+                    element:<Cart/>
                 },
 
              {

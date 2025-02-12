@@ -1,0 +1,33 @@
+RTK- Redux Tool KIT
+--- Reading document is Super power of developer
+--- Card (Add to card feature)
+-- Architechture of RTK
+Redux store is a big object which is kept in global central place. 
+- we can have a lot of data inside the store - yes
+but to keep it managable we have SLices
+--SLICES(Why we need and what it is)
+-- (for logical partition)
+- card slice
+- user slice
+You cannot modify the slice
+- we have to dispatch an action- it calls a function (known as Reducer function)
+**** so when we click on add button - an action will be dispachted and it calls the reducer function , which updates th eslice of redux store. ***
+(A_D_R_S)
+-- Write data
+(A-D-R-S)
+-- Read data
+for that we use something known as Selector,(phenomena is known as Subscribing to store)
+
+## install - RTK and react redux
+// Build store -in utils
+// Export store
+//provide store to application
+// RTK - helps with redux and react-redux is used for react 
+// create cart slice
+// we will export actions and slice reducer
+//  now how to read the data from store
+// to read items from stroe we use hook called useSelector
+// Subscribe to store
+// onClick={handleClick} // function defination will be replaced here
+// onClick={() => {handleClick(item)} // calling call back function with item
+onClick={handleClick(item)} // calling function

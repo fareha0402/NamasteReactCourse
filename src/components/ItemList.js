@@ -1,10 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faStar } from "@fortawesome/free-solid-svg-icons"
 import { CDN_URL } from "../Utils/constants"
+import { useDispatch } from "react-redux"
+import { addItem } from "../Utils/store/cartSlice"
 
 const ItemList = (items) => {
     const arrList = Object.values(items).flat()
-    console.log(items)
+    // console.log(items)
+
+    const dispatch = useDispatch()
+    const handleClick = (item) => {
+        dispatch(addItem(item))
+    }
+
     return (
         <div>
             {arrList.map((i) => (
@@ -16,11 +24,12 @@ const ItemList = (items) => {
                     </div>
                     <div className="w-3/12">
                     <div className="absolute">
-                    <button className="bg-white w-32 text-green-700 rounded-lg py-2  shadow-lg font-bold cursor-pointer">ADD</button>
+                    <button className="bg-white w-32 text-green-700 rounded-lg py-2  shadow-lg font-bold cursor-pointer hover:bg-yellow-50"
+                    onClick={() => handleClick(i)}
+                    >ADD +</button>
                    </div>
                    <img src={CDN_URL + i.card.info.imageId} className="w-full rounded-lg"></img>
                    </div>
-                  
                     </div>
             ))
             }
